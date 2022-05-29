@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Inline&family=Henny+Penny&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("uno.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Henny Penny', cursive;
+  font-size: 2rem;
+  color: #28930b;
+  border-bottom: #167d70 2px groove;
+  padding: 0;
+  margin: 0 2rem;
+}
+
+select {
+  display: flex;
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #07c41a;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+  justify-content: space-around;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-product {
+  margin: 1rem;
+  width: 15rem;
+  height: 25rem;
+  border-radius: 15px;
+  border: groove #00f521 2px;
+  background-color: #496e8587;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-product {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+  height: 50%;
+}
+
+.name-product {
+  margin-top: 0.8rem;
+  color: #000000;
+  font-family: 'Macondo', cursive;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.price-product {
+  font-family: 'Macondo', cursive;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #582406;
+}
+
+.btn-Add {
+  width: 8rem;
+  height: 1.5rem;
+  border-radius: 50rem;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+}
+
+.btn-Add:hover,
+.btn-Add:focus {
+  cursor: pointer;
+  background-color:black;
+  font-weight: 700;
+  color: green;
+  border-radius: 50rem;
+}
+
+.btn-delete{
+  background-color: #ff0000;
+  color: black;
+  width: 8rem;;
+  height: 1.5rem;
+  border-radius: 50rem;
+  font-size: 1rem;
+}
+.btn-delete:hover,
+.btn-delete:focus {
+  cursor: pointer;
+  background-color: #000000;
+  font-weight: 700;
+  color: #ff0000;
+  border-radius: 50rem;
+}
+#btn-create{
+  display: flex;
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #07c41a;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+  margin-left: 2rem;
+  height: 1.5rem;
+  justify-content: space-around;
+
+}
+
+#btn-create:hover{
+  display: flex;
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #467999;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+  justify-content: space-around;
+  margin-left: 2rem;
+  height: 1.5rem;
+}
+
+
+div{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.container {
+	width: 45rem;
+	height: 20rem;
+	background-color: #496e8587;
+  border-top: solid .4rem #00f521;
+	margin: 4rem;
+  padding: 2rem;
+  display: none;
+  margin-top: 2rem;
+}
+
+.form__top {
+	width: 100%;
+	text-align: center;
+	padding: 2rem 0 1rem;
+	margin-bottom: 1rem;
+}
+
+.form__top h2 {
+	color: #000000;
+	font-size: 2rem;
+  margin-top: 3rem;
+}
+
+h2 span {
+  margin-top: 3rem;
+	color: #1eff00;
+  font-size: 4rem;
+
+}
+
+.form__reg {
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+.input{
+	background-color: #efefef46;
+	padding: .5rem;
+	margin: .5rem 0;
+	border: none;
+	border-bottom: solid #00f521 .2rem;
+	transition: all .5s;
+}
+
+.input:focus {
+	border-bottom: solid #008cff .2rem;
+}
+
+#btn-addprd {
+  height: 1.5rem;
+  background-color: #00f521;
+  border-radius: 5rem;
+  width: 13rem;
+  margin-top: 1rem;
+  margin-left: 4.1rem;
+}
+#btn-addprd:hover{
+  height: 1.5rem;
+  background-color: #00f52167;
+  border-radius: 5rem;
+  width: 13rem;
+  margin-top: 1rem;
+  margin-left: 4.1rem;
+}
+#btn-cancel{
+  height: 1.5rem;
+  background-color: rgb(255, 0, 0);
+  border-radius: 5rem;
+  width: 13rem;
+  margin-top: .5rem;
+  margin-left: 4.1rem;
+  
+}
+#btn-cancel:hover{
+  height: 1.5rem;
+  background-color: rgba(255, 0, 0, 0.589);
+  border-radius: 5rem;
+  width: 13rem;
+  margin-top: .5rem;
+  margin-left: 4.1rem;
+}
+
+#filterXPrice{
+  display: flex;
+  margin-left: 2rem;
+}
